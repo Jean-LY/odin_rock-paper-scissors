@@ -1,0 +1,88 @@
+:root{
+    --clr-player1: hsl(317 100% 54%);
+    --clr-player2: #58ee129a;
+    --clr-bg: hsl(323 21% 16%);
+    --clr-bg-player2: #14230cc5;
+}
+
+body{
+    background-color: black;
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10vh;
+}
+
+
+.options{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    padding-bottom: 10rem;
+}
+
+.player1 svg {
+    /* fill: #6ebe49; */
+    fill: var(--clr-player1);
+    cursor: pointer;
+}
+
+.player1 svg path{
+    filter: drop-shadow(0 0 0.8em var(--clr-player1));
+}
+
+.player2 svg {
+    /* fill: #6ebe49; */
+    fill: var(--clr-player2);
+    /* cursor: pointer; */
+}
+
+.player2 svg path{
+    filter: drop-shadow(0 0 0.8em var(--clr-player2));
+}
+
+#selection-btns{
+    display: flex;
+    justify-content: center;
+}
+
+#center{
+    width: 20vw;
+    padding-top: 5vw;
+}
+
+#center p{
+    font-size: 4rem;
+    text-align: center;
+}
+
+#left p,
+#right p{
+    font-size: 4rem;
+    text-align: center;
+    margin: 1%;
+}
+
+#player1Score span,
+#player2Score span{
+    font-size: 2rem;
+    align-self:auto;
+}
+
+#top{
+    padding:none; 
+}
+
+#results{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#resetBtn{
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 15px;
+    border: white solid 3px;
+    color: white; 
+}
