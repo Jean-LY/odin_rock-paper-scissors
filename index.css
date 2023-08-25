@@ -24,6 +24,12 @@ body{
     /* fill: #6ebe49; */
     fill: var(--clr-player1);
     cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+.player1 svg:hover{
+    transform: scale(1.05);
+    /* box-shadow: 2px 2px #2e2e2e5e; */
 }
 
 .player1 svg path{
@@ -85,4 +91,7 @@ body{
     border-radius: 15px;
     border: white solid 3px;
     color: white; 
+    transition: ease-out 0.3;
+    cursor: pointer;
 }
+
